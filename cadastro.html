@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Loucos por Burger</title>
 </head>
 <body>
 
         <header class="main-header">
             <div class="header-content">
-                <nav class="topics">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Sobre</li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                <nav>
+                    <input type="checkbox" id="checkbox" class="checkbox">
+                    <label for="checkbox" class="label-topics"><span class="hamburguer"></span></label>
+                    <ul class="topics">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Sobre</li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
                 </nav>
                 <div class="logo">
                     <h1>Cadastro</h1>
@@ -23,9 +27,62 @@
 
         <main>
             <div class="banner">
-
+                <section class="container-form">
+            
+                    <div class="form">
+                        <form action="#">
+                            <div class="form-header">
+                                <h1 class="title">Cadastre-se</h1>
+            
+                                <div class="login-button">
+                                    <button><a href="#">Entrar</a></button>
+                                </div>
+                            </div>
+            
+            
+            
+                            <div class="input-group">
+                                <div class="input-box">
+                                    <label for="firstname">Nome</label>
+                                    <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro nome"
+                                        required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="lastame">Sobrenome</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="email">email</label>
+                                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="number">Celular</label>
+                                    <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx" required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="password">Senha</label>
+                                    <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="confirm-password">confirme Senha</label>
+                                    <input type="password" name="confirm-password" id="confirm-password"
+                                        placeholder="confirme sua senha" required>
+                                </div>
+                            </div>
+                            <div class="continue-button">
+                                <button><a href="#">Continuar</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            
             </div>
-        </main>
+            </main>
 
         <footer>
             <div class="footer-content">
